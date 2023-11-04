@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: pritamkhergade/frontend:latest
+        image: 103141962212.dkr.ecr.us-east-1.amazonaws.com/frontend:1.0.0
         ports:
         - containerPort: 80
 
@@ -34,4 +34,4 @@ spec:
     targetPort: 80
   selector:
     app: nginx
-  type: ClusterIP
+  type: LoadBalancer
